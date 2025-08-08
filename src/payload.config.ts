@@ -11,6 +11,8 @@ import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { HeroSection } from './collections/Hero'
 import { OurServiceSection } from './collections/Service'
+import { Blogs } from './collections/Blog'
+import { ContentWithMedia } from './collections/content'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -22,7 +24,8 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media],
+  collections: [Users, Media, Blogs],
+  blocks: [ContentWithMedia],
   globals: [HeroSection, OurServiceSection],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
