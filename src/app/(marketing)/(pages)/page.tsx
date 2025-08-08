@@ -11,6 +11,7 @@ export const dynamic = 'force-dynamic'
 const MarketingRootPage = () => {
   return (
     <div className="">
+      <h1>adfdssfadfasdfasdfasdfsds</h1>
       <HeroSection />
       <WhyChooseNirvana />
       <OurServicesV2 />
