@@ -11,6 +11,7 @@ export const dynamic = 'force-dynamic'
 const MarketingRootPage = () => {
   return (
     <div className=" overflow-y-hidden">
+      <h1>dfasdf</h1>
       <HeroSection />
       <WhyChooseNirvana />
       <OurServicesV2 />
